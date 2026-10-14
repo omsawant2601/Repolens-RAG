@@ -2,16 +2,16 @@
 
 import { RequireAuth } from "@/components/providers/require-auth";
 import { AppShell } from "@/components/layout/app-shell";
-import { OverviewDashboard } from "@/components/dashboard/overview-dashboard";
+import { RepoDashboard } from "@/components/dashboard/repo-dashboard";
 
-export default function OverviewPage() {
+export default function RepositoriesPage() {
   return (
     <RequireAuth>
       <AppShell
-        title="Overview"
-        description="Workspace stats and recent repository activity"
+        title="Repositories"
+        description="Browse and manage your GitHub repositories"
       >
-        <OverviewDashboard />
+        <RepoDashboard />
       </AppShell>
     </RequireAuth>
   );
