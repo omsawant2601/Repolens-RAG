@@ -1,0 +1,23 @@
+name: repolens
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: repolens-postgres
+    environment:
+      POSTGRES_DB: repolens_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DATASOURCE_PASSWORD:-postgres}
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d repolens_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres_data:
+    name: repolens_repolens_postgres_data

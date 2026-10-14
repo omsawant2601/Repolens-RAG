@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#168BFF"/>
+      <stop offset="0.55" stop-color="#16C7E8"/>
+      <stop offset="1" stop-color="#2FE3B5"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#473BFF"/>
+      <stop offset="1" stop-color="#735CFF"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087CFF"/>
+      <stop offset="1" stop-color="#17BCEB"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1266D8"/>
+      <stop offset="1" stop-color="#16D6C0"/>
+    </linearGradient>
+    <linearGradient id="code" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1FAEFF"/>
+      <stop offset="1" stop-color="#2DE8C1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Repository cards -->
+  <rect x="650" y="180" width="245" height="82" rx="25" fill="url(#card1)"/>
+  <rect x="675" y="245" width="285" height="86" rx="27" fill="url(#card2)"/>
+  <rect x="700" y="315" width="315" height="92" rx="29" fill="url(#card3)"/>
+  <rect x="748" y="390" width="265" height="235" rx="35" fill="#073A91"/>
+
+  <!-- Code symbol -->
+  <path d="M835 485 L785 535 L835 585" fill="none" stroke="url(#code)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M920 485 L970 535 L920 585" fill="none" stroke="url(#code)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M895 455 L860 615" fill="none" stroke="url(#code)" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- Magnifying glass -->
+  <circle cx="430" cy="465" r="300" fill="none" stroke="url(#lens)" stroke-width="72"/>
+  <path d="M645 680 L805 840" fill="none" stroke="url(#lens)" stroke-width="72" stroke-linecap="round"/>
+
+  <!-- Lens -->
+  <circle cx="430" cy="465" r="250" fill="#F8FAFF"/>
+  <circle cx="430" cy="465" r="250" fill="none" stroke="#0A1838" stroke-width="22"/>
+
+  <!-- Simplified GitHub-style cat mark -->
+  <path d="M300 350
+           C270 370 260 410 270 450
+           C275 480 292 500 315 515
+           C300 535 300 565 315 585
+           C330 605 355 610 380 600
+           L380 660
+           C410 675 450 675 480 660
+           L480 600
+           C505 610 530 605 545 585
+           C560 565 560 535 545 515
+           C568 500 585 480 590 450
+           C600 410 590 370 560 350
+           L525 375
+           C495 360 465 355 430 355
+           C395 355 365 360 335 375 Z"
+        fill="#081532"/>
+
+  <!-- Cat ears -->
+  <path d="M300 350 L300 285 L355 325 Z" fill="#081532"/>
+  <path d="M560 350 L560 285 L505 325 Z" fill="#081532"/>
+
+  <!-- Cat cutout accents -->
+  <path d="M315 515 C290 505 275 490 270 470" fill="none" stroke="#F8FAFF" stroke-width="18" stroke-linecap="round"/>
+  <path d="M350 535 C365 550 390 555 405 555" fill="none" stroke="#F8FAFF" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Transparent background intentionally omitted -->
+</svg>
